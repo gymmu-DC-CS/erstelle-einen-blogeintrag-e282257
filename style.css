@@ -39,19 +39,25 @@ color:rgb(174, 77, 3)
   tr:nth-child(even){
 background-color: rgb(218, 190, 69);
   }
-  div{
-  align-content: center;
-  }
+  
+div {
+  position: absolute;
+  left: 25%;
+  
+  
+}
   #Rechteck {
+    .box { position: relative;}
     background-color: rgb(255, 140, 0);
-    width: 400px;
+    width: 450px;
     height: 250px;
     margin: auto;
-    border: 3px solid black;
+    border: 2px solid black;
     animation-name: farbwechsel;
     animation-duration: 10s;
     animation-iteration-count: infinite;
   }
+  
   @keyframes farbwechsel {
     from{background-color: rgb(255, 140, 0);}
     to{background-color: rgb(255, 225, 127);}
