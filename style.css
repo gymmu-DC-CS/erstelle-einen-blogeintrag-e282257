@@ -84,3 +84,6 @@ div{
   margin-left: 18px;
   z-index: 2;
 }
+p{
+  text-align: right;
+}
