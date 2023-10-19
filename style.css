@@ -20,59 +20,67 @@ color:rgb(174, 77, 3)
 }
  
   table{
-    font-size: 32px;
-    border: 2px solid black;
+    font-size: 15px;
+    
+    border-collapse: collapse;
     background-color: rgb(229, 205, 130);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    
     
   }
   td, th{
-    border: 2px solid black;
+    
+    border-collapse: collapse;
     padding: 25px 55px;
     text-align: center;
   }
   thead{
     box-shadow: 0 3px 6px #00000030;
     background-color: rgb(237, 175, 43);
-    border-radius: 20px;
+    
  }
- th{
-  border-radius: 20px;
+ th:first-child{
+  border-radius: 20px 0 0 0;
  }
+ th:last-child{
+  border-radius: 0 20px 0 0;
+ }
+
+ 
+ 
   
   tr:nth-child(even){
 background-color: rgb(218, 190, 69);
   }
-  
-div {
-  position: absolute;
-  left: 25%;
-  
-  
-}
-  #Rechteck {
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: auto;
-    background-color: rgb(255, 140, 0);
-    width: 450px;
-    height: 250px;
-    border: 2px solid black;
-    animation-name: farbwechsel;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes farbwechsel {
-    from{background-color: rgb(255, 140, 0);}
-    to{background-color: rgb(255, 225, 127);}
-}
+ 
 #Brandenburgertor{
   margin-left: 10px;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: auto;
-  border: 5px sandybrown;
+}
+
+#Rechteck {
   
+background-color: rgb(246, 175, 23);
+  width: 500px;
+  height: 250px;
+  border: 1px solid black;
+  margin-left: 3px;
+  margin-top: -230px;
+  animation-name: farbwechsel;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  z-index: 1;
+}
+
+@keyframes farbwechsel{
+  from{background-color: rgb(248, 164, 7)}
+  to{background-color: rgb(237, 211, 13);}
+}
+
+div{
+  margin-top: 13px;
+  margin-left: 18px;
+  z-index: 2;
 }
