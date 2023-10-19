@@ -13,27 +13,32 @@ body {
 h1{
 color:rgb(174, 77, 3)
 }
-#Rechteck 
-  background-color: rgb(216, 176, 55);
-  width: 400px;
-  height: 300px;
-  margin: auto;
+
+*{
+  margin: 0;
+  padding: 0;
+}
  
   table{
     font-size: 32px;
     border: 2px solid black;
-    background-color: red;
+    background-color: rgb(229, 205, 130);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
     
   }
   td, th{
     border: 2px solid black;
     padding: 25px 55px;
-    text-align: left;
+    text-align: center;
   }
   thead{
     box-shadow: 0 3px 6px #00000030;
     background-color: rgb(237, 175, 43);
+    border-radius: 20px;
+ }
+ th{
+  border-radius: 20px;
  }
   
   tr:nth-child(even){
@@ -47,11 +52,12 @@ div {
   
 }
   #Rechteck {
-    .box { position: relative;}
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: auto;
     background-color: rgb(255, 140, 0);
     width: 450px;
     height: 250px;
-    margin: auto;
     border: 2px solid black;
     animation-name: farbwechsel;
     animation-duration: 10s;
@@ -61,4 +67,12 @@ div {
   @keyframes farbwechsel {
     from{background-color: rgb(255, 140, 0);}
     to{background-color: rgb(255, 225, 127);}
+}
+#Brandenburgertor{
+  margin-left: 10px;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: auto;
+  border: 5px sandybrown;
+  
 }
